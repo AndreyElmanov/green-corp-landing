@@ -9,10 +9,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
+    left: 0;
+    right: 0;
     top: 0;
-    background: white;
+    background: transparent;
     z-index: 1;
+    transition: box-shadow, background-color .25s ease;
+  }
+
+  .header__scrolled {
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
   }
 
   .header__logo {
@@ -65,7 +73,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     background: url('img/back.png') no-repeat;
     background-position: center;
@@ -443,6 +451,10 @@ footer h3{
       padding: 115px 20px;
   }
 
+  .cards {
+    grid-template-columns: auto;
+}
+
   .about h1 {
       font-size: 36px;
       line-height: 40px;
@@ -473,7 +485,7 @@ footer h3{
 
   .about {
       flex-direction: column-reverse;
-      padding: 50px 10px;
+      padding: 100px 10px;
   }
 
   .about h1 {
