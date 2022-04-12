@@ -53,8 +53,9 @@ body {
   .orb-canvas {
     position: absolute;
     top: 0;
+    left: 0;
     height: 100%;
-    right: 0;
+    width: 100%;
   }
 
   .about__image {
@@ -100,6 +101,7 @@ body {
 
   .about__info {
     max-width: 550px;
+    padding-left: 20px;
   }
 
   .form__container {
@@ -358,8 +360,8 @@ body {
   }
 
 .footer__container{
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__copyright{
